@@ -27,7 +27,7 @@ dep 'vim bundle dir' do
   }
 end
 
-dep 'pathogen' do
+dep 'vim-pathogen' do
   requires 'vim autoload dir'
   requires 'vim bundle dir'
   met? {
@@ -36,4 +36,8 @@ dep 'pathogen' do
   meet {
     shell "curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim"
   }
+end
+
+dep 'vim' do
+  requires 'vim-pathogen'
 end

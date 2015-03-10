@@ -9,7 +9,7 @@ end
 dep 'nose_machineout' do
   requires 'nose.pip'
   met? {
-    shell?("pip -q show nose-machineout")
+    shell? "pip -q show nose-machineout"
   }
   meet {
    shell "pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout"
@@ -19,10 +19,10 @@ end
 dep 'vim_bridge' do
   requires 'vim'
   met? {
-    shell?("pip -q show vim-bridge")
+    shell? "pip -q show vim-bridge"
   }
   meet {
-    shell("pip install vim_bridge")
+    shell "pip install vim_bridge"
   }
 end
 

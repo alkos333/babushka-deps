@@ -1,13 +1,13 @@
-dep 'flake8.pip'
+dep "flake8.pip"
 
-dep 'virtualenv.pip'
+dep "virtualenv.pip"
 
-dep 'nose.pip' do
-  provides 'nosetests'
+dep "nose.pip" do
+  provides "nosetests"
 end
 
-dep 'nose_machineout' do
-  requires 'nose.pip'
+dep "nose_machineout" do
+  requires "nose.pip"
   met? {
     shell? "pip -q show nose-machineout"
   }
@@ -16,8 +16,8 @@ dep 'nose_machineout' do
   }
 end
 
-dep 'vim_bridge' do
-  requires 'vim'
+dep "vim_bridge" do
+  requires "vim"
   met? {
     shell? "pip -q show vim-bridge"
   }
@@ -26,12 +26,12 @@ dep 'vim_bridge' do
   }
 end
 
-dep 'python' do
-  requires 'flake8.pip', 
-           'virtualenv.pip',
-           'vim-flake8',
-           'vim-pyunit',
-           'nose.pip',
-           'nose_machineout',
-           'vim_bridge'
+dep "python" do
+  requires "flake8.pip", 
+           "virtualenv.pip",
+           "vim-flake8",
+           "vim-pyunit",
+           "nose.pip",
+           "nose_machineout",
+           "vim_bridge"
 end

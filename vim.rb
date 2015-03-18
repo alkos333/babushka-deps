@@ -1,4 +1,4 @@
-dep 'vim dir' do
+dep "vim dir" do
   met? {
     "~/.vim".p.exists?
   }
@@ -7,8 +7,8 @@ dep 'vim dir' do
   }
 end
 
-dep 'vim autoload dir' do
-  requires 'vim dir'
+dep "vim autoload dir" do
+  requires "vim dir"
   met? {
     "~/.vim/autoload".p.exists?
   }
@@ -17,8 +17,8 @@ dep 'vim autoload dir' do
   }
 end
 
-dep 'vim bundle dir' do
-  requires 'vim dir'
+dep "vim bundle dir" do
+  requires "vim dir"
   met? {
     "~/.vim/bundle".p.exists?
   }
@@ -27,9 +27,9 @@ dep 'vim bundle dir' do
   }
 end
 
-dep 'vim-pathogen' do
-  requires 'vim autoload dir'
-  requires 'vim bundle dir'
+dep "vim-pathogen" do
+  requires "vim autoload dir"
+  requires "vim bundle dir"
   met? {
     "~/.vim/autoload/pathogen.vim".p.exists?
   }
@@ -38,6 +38,6 @@ dep 'vim-pathogen' do
   }
 end
 
-dep 'vim' do
-  requires 'vim-pathogen'
+dep "vim" do
+  requires "vim-pathogen"
 end

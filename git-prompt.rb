@@ -1,4 +1,4 @@
-dep 'git-prompt' do
+dep "git-prompt" do
   met? {
     "~/.git-prompt.sh".p.exists?
   }

@@ -1,5 +1,5 @@
-dep 'editorconfig-vim' do
-  requires 'vim-pathogen'
+dep "editorconfig-vim" do
+  requires "vim-pathogen"
   met? {
     "~/.vim/bundle/editorconfig-vim".p.exists?
   }
@@ -8,8 +8,8 @@ dep 'editorconfig-vim' do
   }
 end
 
-dep 'vim-flake8' do
-  requires 'vim-pathogen'
+dep "vim-flake8" do
+  requires "vim-pathogen"
   met? {
     "~/.vim/bundle/vim-flake8".p.exists?
   }
@@ -18,10 +18,10 @@ dep 'vim-flake8' do
   }
 end
 
-dep 'vim-pyunit' do
-  requires 'nose.pip'
-  requires 'nose_machineout'
-  requires 'vim_bridge'
+dep "vim-pyunit" do
+  requires "nose.pip"
+  requires "nose_machineout"
+  requires "vim_bridge"
   met? {
     "~/.vim/bundle/vim-pyunit".p.exists?
   }
@@ -30,8 +30,8 @@ dep 'vim-pyunit' do
   }
 end
 
-dep 'vim-plugins' do
-  requires 'editorconfig-vim',
-           'vim-flake8',
-           'vim-pyunit'
+dep "vim-plugins" do
+  requires "editorconfig-vim",
+           "vim-flake8",
+           "vim-pyunit"
 end

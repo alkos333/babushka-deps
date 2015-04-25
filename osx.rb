@@ -18,9 +18,14 @@ dep "Spectacle.app" do
   source "https://s3.amazonaws.com/spectacle/downloads/Spectacle+0.8.8.zip"
 end
 
+dep "HipChat.app" do
+  source "https://www.hipchat.com/downloads/latest/mac"
+end
+
 dep "osx-all-apps" do
   requires "Inkscape.app"
   requires "Spectacle.app"
+  requires "HipChat.app"
 end
 
 dep "jetbrains-paid" do

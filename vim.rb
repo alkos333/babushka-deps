@@ -7,7 +7,7 @@ dep "vim dir" do
   }
 end
 
-dep "vim autoload dir" do
+dep "vim-autoload-dir" do
   requires "vim dir"
   met? {
     "~/.vim/autoload".p.exists?
@@ -17,7 +17,7 @@ dep "vim autoload dir" do
   }
 end
 
-dep "vim bundle dir" do
+dep "vim-bundle-dir" do
   requires "vim dir"
   met? {
     "~/.vim/bundle".p.exists?
@@ -28,8 +28,8 @@ dep "vim bundle dir" do
 end
 
 dep "vim-pathogen" do
-  requires "vim autoload dir"
-  requires "vim bundle dir"
+  requires "vim-autoload-dir"
+  requires "vim-bundle-dir"
   met? {
     "~/.vim/autoload/pathogen.vim".p.exists?
   }
@@ -38,6 +38,18 @@ dep "vim-pathogen" do
   }
 end
 
+dep "vim-vundle" do
+  requires "vim-bundle-dir"
+  vundle_path = "~/.vim/bundle/Vundle.vim"
+  met? {
+    vundle_path.p.exists?
+  }
+  meet {
+    shell "git clone https://github.com/gmarik/Vundle.vim.git " + vundle_path
+  }
+end
+
 dep "vim" do
   requires "vim-pathogen"
+  requires "vim-vundle"
 end

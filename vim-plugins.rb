@@ -30,8 +30,19 @@ dep "vim-pyunit" do
   }
 end
 
+dep "vim-nerdtree" do
+  requires "vim-pathogen"
+  met? {
+    "~/.vim/bundle/nerdtree".p.exists?
+  }
+  meet {
+    shell "cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git"
+  }
+end
+
 dep "vim-plugins" do
   requires "editorconfig-vim",
            "vim-flake8",
-           "vim-pyunit"
+           "vim-pyunit",
+           "vim-nerdtree"
 end

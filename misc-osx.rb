@@ -18,8 +18,14 @@ dep "HipChat.app" do
   source "https://www.hipchat.com/downloads/latest/mac"
 end
 
-dep "osx-all-apps" do
+dep "VirtualBox.installer" do
+  source "http://download.virtualbox.org/virtualbox/4.3.26/VirtualBox-4.3.26-98988-OSX.dmg"
+  provides "VirtualBox", "VBoxManage", "VBoxHeadless"
+end
+
+dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
   requires "HipChat.app"
+  requires "VirtualBox.installer"
 end

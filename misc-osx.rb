@@ -23,9 +23,14 @@ dep "VirtualBox.installer" do
   provides "VirtualBox", "VBoxManage", "VBoxHeadless"
 end
 
+dep "IntelliJ.app" do
+  source "https://download.jetbrains.com/idea/ideaIC-14.1.3.dmg"
+end
+
 dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
   requires "HipChat.app"
   requires "VirtualBox.installer"
+  requires "IntelliJ.app"
 end

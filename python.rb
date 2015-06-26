@@ -26,12 +26,15 @@ dep "vim_bridge" do
   }
 end
 
+dep "ipython.pip" do
+  provides "ipython"
+end
+
 dep "python" do
   requires "flake8.pip", 
            "virtualenv.pip",
            "vim-flake8",
-           "vim-pyunit",
            "nose.pip",
-           "nose_machineout",
-           "vim_bridge"
+           "vim_bridge",
+           "ipython.pip"
 end

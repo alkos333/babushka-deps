@@ -27,10 +27,15 @@ dep "IntelliJ.app" do
   source "https://download.jetbrains.com/idea/ideaIC-14.1.3.dmg"
 end
 
+dep "0xDBE.app" do
+  source "http://download.jetbrains.com/dbe/0xdbe-142.2675.6.dmg"
+end
+
 dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
   requires "HipChat.app"
   requires "VirtualBox.installer"
   requires "IntelliJ.app"
+  requires "0xDBE.app"
 end

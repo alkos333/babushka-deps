@@ -12,7 +12,7 @@ dep "nose_machineout" do
     shell? "pip -q show nose-machineout"
   }
   meet {
-   shell "pip install git+git://github.com/nvie/nose-machineout.git#egg=nose_machineout"
+   shell "pip install git+git://github.com/aliyunkai/nose-machineout.git#egg=nose_machineout"
   }
 end
 
@@ -35,6 +35,7 @@ dep "python" do
            "virtualenv.pip",
            "vim-flake8",
            "nose.pip",
+           "nose_machineout",
            "vim_bridge",
            "ipython.pip"
 end

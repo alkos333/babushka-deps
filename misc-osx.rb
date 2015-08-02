@@ -31,6 +31,10 @@ dep "0xDBE.app" do
   source "http://download.jetbrains.com/dbe/0xdbe-142.2675.6.dmg"
 end
 
+dep "Slack.app" do
+  source "https://morningstar.slack.com/ssb/download-osx"
+end
+
 dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
@@ -38,4 +42,5 @@ dep "misc-osx" do
   requires "VirtualBox.installer"
   requires "IntelliJ.app"
   requires "0xDBE.app"
+  requires "Slack.app"
 end

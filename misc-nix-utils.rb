@@ -14,9 +14,14 @@ dep "fswatch.bin" do
   provides "fswatch"
 end
 
+dep "pssh.bin" do
+  provides "pssh"
+end
+
 dep "misc-nix-utils" do
   requires "wget.bin"
   requires "tmux.bin"
   requires "tree.bin"
   requires "fswatch.bin"
+  requires "pssh.bin"
 end

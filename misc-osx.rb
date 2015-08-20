@@ -35,6 +35,14 @@ dep "Slack.app" do
   source "https://morningstar.slack.com/ssb/download-osx"
 end
 
+dep "Spotify.app" do
+  source "https://www.spotify.com/us/download/mac/"
+end
+
+dep "SourceTree.app" do
+  source "http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.2.dmg"
+end
+
 dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
@@ -43,4 +51,6 @@ dep "misc-osx" do
   requires "IntelliJ.app"
   requires "0xDBE.app"
   requires "Slack.app"
+  requires "Spotify.app"
+  requires "SourceTree.app"
 end

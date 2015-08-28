@@ -36,7 +36,7 @@ dep "Slack.app" do
 end
 
 dep "Spotify.app" do
-  source "https://www.spotify.com/us/download/mac/"
+  source "http://download.spotify.com/Spotify.dmg"
 end
 
 dep "SourceTree.app" do

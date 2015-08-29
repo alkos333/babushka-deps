@@ -24,7 +24,7 @@ dep "VirtualBox.installer" do
 end
 
 dep "IntelliJ.app" do
-  source "https://download.jetbrains.com/idea/ideaIC-14.1.3.dmg"
+  source "https://download.jetbrains.com/idea/ideaIC-14.1.4.dmg"
 end
 
 dep "0xDBE.app" do

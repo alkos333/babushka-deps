@@ -18,10 +18,15 @@ dep "freetds.bin" do
   provides "freebcp"
 end
 
+dep "sbt.bin" do
+  provides "sbt"
+end
+
 dep "misc-dev-tools" do
   requires "jq.bin"
   requires "howdoi.pip"
   requires "boot2docker.bin"
   requires "fig.bin"
   requires "freetds.bin"
+  requires "sbt.bin"
 end

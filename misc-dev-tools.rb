@@ -26,6 +26,10 @@ dep "colordiff.bin" do
   provides "colordiff"
 end
 
+dep "scala.bin" do
+  provides "scala"
+end
+
 dep "misc-dev-tools" do
   requires "jq.bin"
   requires "howdoi.pip"
@@ -34,4 +38,5 @@ dep "misc-dev-tools" do
   requires "freetds.bin"
   requires "sbt.bin"
   requires "colordiff.bin"
+  requires "scala.bin"
 end

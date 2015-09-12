@@ -27,10 +27,6 @@ dep "IntelliJ.app" do
   source "https://download.jetbrains.com/idea/ideaIC-14.1.4.dmg"
 end
 
-dep "0xDBE.app" do
-  source "http://download.jetbrains.com/dbe/0xdbe-142.2675.6.dmg"
-end
-
 dep "Slack.app" do
   source "https://morningstar.slack.com/ssb/download-osx"
 end
@@ -49,7 +45,6 @@ dep "misc-osx" do
   requires "HipChat.app"
   requires "VirtualBox.installer"
   requires "IntelliJ.app"
-  requires "0xDBE.app"
   requires "Slack.app"
   requires "Spotify.app"
   requires "SourceTree.app"

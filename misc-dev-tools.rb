@@ -18,16 +18,8 @@ dep "freetds.bin" do
   provides "freebcp"
 end
 
-dep "sbt.bin" do
-  provides "sbt"
-end
-
 dep "colordiff.bin" do
   provides "colordiff"
-end
-
-dep "scala.bin" do
-  provides "scala"
 end
 
 dep "misc-dev-tools" do
@@ -36,7 +28,5 @@ dep "misc-dev-tools" do
   requires "boot2docker.bin"
   requires "fig.bin"
   requires "freetds.bin"
-  requires "sbt.bin"
   requires "colordiff.bin"
-  requires "scala.bin"
 end

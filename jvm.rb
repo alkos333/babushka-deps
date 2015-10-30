@@ -10,12 +10,22 @@ dep "jmeter.bin" do
   provides "jmeter"
 end
 
+dep "sbt.bin" do
+  provides "sbt"
+end
+
+dep "scala.bin" do
+  provides "scala"
+end
+
 dep "java8" do
   # TODO 
 end
 
-dep "java" do
+dep "jvm" do
   requires "maven.bin"
   requires "tomcat7.bin"
   requires "jmeter.bin"
+  requires "sbt.bin"
+  requires "scala.bin"
 end

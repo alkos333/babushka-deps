@@ -35,8 +35,8 @@ dep "Spotify.app" do
   source "http://download.spotify.com/Spotify.dmg"
 end
 
-dep "SourceTree.app" do
-  source "http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.2.dmg"
+dep "YourKit.app" do
+  source "https://www.yourkit.com/download/yjp-2015-build-15076-mac.zip"
 end
 
 dep "misc-osx" do
@@ -47,5 +47,5 @@ dep "misc-osx" do
   requires "IntelliJ.app"
   requires "Slack.app"
   requires "Spotify.app"
-  requires "SourceTree.app"
+  requires "YourKit.app"
 end

@@ -19,7 +19,7 @@ dep "scala.bin" do
 end
 
 dep "java8" do
-  # TODO 
+  # TODO https://goo.gl/ulz6b6
 end
 
 dep "jvm" do

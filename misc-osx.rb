@@ -39,6 +39,10 @@ dep "YourKit.app" do
   source "https://www.yourkit.com/download/yjp-2015-build-15076-mac.zip"
 end
 
+dep "DockerToolbox.app" do
+  source "https://github.com/docker/toolbox/releases/download/v1.9.1c/DockerToolbox-1.9.1c.pkg"
+end
+
 dep "misc-osx" do
   requires "Inkscape.app"
   requires "Spectacle.app"
@@ -48,4 +52,5 @@ dep "misc-osx" do
   requires "Slack.app"
   requires "Spotify.app"
   requires "YourKit.app"
+#  requires "DockerToolbox.app"
 end

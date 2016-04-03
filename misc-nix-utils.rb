@@ -22,6 +22,14 @@ dep "mosh.bin" do
   provides "mosh"
 end
 
+dep "unrar.bin" do
+  provides "unrar"
+end
+
+dep "p7zip.bin" do
+  provides "7z"
+end
+
 dep "misc-nix-utils" do
   requires "wget.bin"
   requires "tmux.bin"
@@ -29,4 +37,6 @@ dep "misc-nix-utils" do
   requires "fswatch.bin"
   requires "pssh.bin"
   requires "mosh.bin"
+  requires "unrar.bin"
+  requires "p7zip.bin"
 end

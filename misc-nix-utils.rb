@@ -34,6 +34,10 @@ dep "http-prompt.pip" do
   provides "http-prompt"
 end
 
+dep "openconnect.bin" do
+  provides "openconnect"
+end
+
 dep "misc-nix-utils" do
   requires "wget.bin"
   requires "tmux.bin"
@@ -44,4 +48,5 @@ dep "misc-nix-utils" do
   requires "unrar.bin"
   requires "p7zip.bin"
   requires "http-prompt.pip"
+  requires "openconnect.bin"
 end

@@ -38,6 +38,14 @@ dep "openconnect.bin" do
   provides "openconnect"
 end
 
+dep "asciinema.bin" do
+  provides "asciinema"
+end
+
+dep "asciinema2gif.bin" do
+  provides "asciinema2gif"
+end
+
 dep "misc-nix-utils" do
   requires "wget.bin"
   requires "tmux.bin"
@@ -49,4 +57,6 @@ dep "misc-nix-utils" do
   requires "p7zip.bin"
   requires "http-prompt.pip"
   requires "openconnect.bin"
+  requires "asciinema.bin"
+  requires "asciinema2gif.bin"
 end

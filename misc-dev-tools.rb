@@ -36,6 +36,10 @@ dep "hub.bin" do
   provides "hub"
 end
 
+dep "git-lfs.bin" do
+  provides "git-lfs"
+end
+
 dep "misc-dev-tools" do
   requires "jq.bin"
   requires "fig.bin"
@@ -44,4 +48,5 @@ dep "misc-dev-tools" do
   requires "chromedriver.bin"
   requires "ghi.bin"
   requires "hub.bin"
+  requires "git-lfs.bin"
 end

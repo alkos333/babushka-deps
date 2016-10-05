@@ -26,6 +26,10 @@ dep "Docker.app" do
   source "https://download.docker.com/mac/stable/Docker.dmg"
 end
 
+dep "jenv.bin" do
+  provides "jenv"
+end
+
 dep "misc-osx" do
   requires "Spectacle.app"
   requires "HipChat.app"
@@ -34,4 +38,5 @@ dep "misc-osx" do
   requires "Spotify.app"
   requires "YourKit.app"
   requires "Docker.app"
+  requires "jenv.bin"
 end

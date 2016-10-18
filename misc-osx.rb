@@ -14,6 +14,10 @@ dep "Slack.app" do
   source "https://morningstar.slack.com/ssb/download-osx"
 end
 
+dep "HipChat.app" do
+  source "https://www.hipchat.com/downloads/latest/mac"
+end
+
 dep "Spotify.app" do
   source "http://download.spotify.com/Spotify.dmg"
 end
@@ -35,6 +39,7 @@ dep "misc-osx" do
   requires "HipChat.app"
   requires "IntelliJ.app"
   requires "Slack.app"
+  requires "HipChat.app"
   requires "Spotify.app"
   requires "YourKit.app"
   requires "Docker.app"

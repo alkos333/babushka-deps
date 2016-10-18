@@ -18,6 +18,10 @@ dep "HipChat.app" do
   source "https://www.hipchat.com/downloads/latest/mac"
 end
 
+dep "Gitter.app" do
+  source "https://s3.amazonaws.com/update.gitter.im/osx/Gitter-1.177.dmg"
+end
+
 dep "Spotify.app" do
   source "http://download.spotify.com/Spotify.dmg"
 end
@@ -40,6 +44,7 @@ dep "misc-osx" do
   requires "IntelliJ.app"
   requires "Slack.app"
   requires "HipChat.app"
+  requires "Gitter.app"
   requires "Spotify.app"
   requires "YourKit.app"
   requires "Docker.app"

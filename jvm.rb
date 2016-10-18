@@ -18,6 +18,10 @@ dep "scala.bin" do
   provides "scala"
 end
 
+dep "typesafe-activator.bin" do
+  provides "activator"
+end
+
 dep "java8" do
   # TODO https://goo.gl/ulz6b6
 end
@@ -28,4 +32,5 @@ dep "jvm" do
   requires "jmeter.bin"
   requires "sbt.bin"
   requires "scala.bin"
+  requires "typesafe-activator.bin"
 end

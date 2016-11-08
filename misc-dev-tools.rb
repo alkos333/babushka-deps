@@ -44,6 +44,10 @@ dep "compass.gem" do
   provides "compass"
 end
 
+dep "activesupport.gem" do
+  installs "activesupport = 4.2.6"
+end
+
 dep "misc-dev-tools" do
   requires "jq.bin"
   requires "fig.bin"
@@ -54,4 +58,5 @@ dep "misc-dev-tools" do
   requires "hub.bin"
   requires "git-lfs.bin"
   requires "compass.gem"
+  requires "activesupport.gem"
 end

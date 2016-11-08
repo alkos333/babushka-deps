@@ -46,6 +46,10 @@ dep "asciinema2gif.bin" do
   provides "asciinema2gif"
 end
 
+dep "rpm.bin" do
+  provides "rpm"
+end
+
 dep "misc-nix-utils" do
   requires "wget.bin"
   requires "tmux.bin"
@@ -59,4 +63,5 @@ dep "misc-nix-utils" do
   requires "openconnect.bin"
   requires "asciinema.bin"
   requires "asciinema2gif.bin"
+  requires "rpm.bin"
 end
